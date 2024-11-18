@@ -1,9 +1,22 @@
-.gallery {
+
+@keyframes smooth-landing {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    padding: 50px;
+    padding: 60px;
     background-color: #f0f0f0;
+    animation: smooth-landing 1s ease-in-out; 
   }
   
   .item {
@@ -12,12 +25,23 @@
     background-color: #ddd;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
   }
-  
   .item img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
     object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease; 
+  }
+  
+  
+  .item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .item:hover img {
+    transform: scale(1.1); 
   }
   
