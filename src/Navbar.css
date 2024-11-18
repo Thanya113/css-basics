@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    color: #333;
+    padding: 10px 20px;
+  }
+  
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+  }
+  
+  .nav-links li:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,10 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #0c0c36;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+  }
+  
